@@ -26,6 +26,10 @@ def get_dataset(cfg, mode):
         from .single_ball import SingleBall
         root = osp.join(cfg.dataset_roots.SINGLE_BALL)
         return SingleBall(root, mode)
+    if cfg.dataset == 'CRAFT':
+        from .craft import IntuitivePhysicsDataset
+        root = osp.join(cfg.dataset_roots.CRAFT)
+        return IntuitivePhysicsDataset(split="train", path=root)
     else:
         raise ValueError(f'Dataset "{cfg.dataset}" not defined in dataset.__init__.py')
 

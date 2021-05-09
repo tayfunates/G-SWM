@@ -41,6 +41,7 @@ cfg = CfgNode({
         'BALLS_TWO_LAYER_DENSE': '../data/BALLS_TWO_LAYER_DENSE',
         'OBJ3D': '../data/OBJ3D',
         'SINGLE_BALL': '../data/SINGLE_BALL',
+        'CRAFT': '../data/CRAFT',
         'MAZE': '../data/MAZE',
     },
     
