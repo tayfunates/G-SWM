@@ -37,6 +37,12 @@ Install PyTorch 1.3.0:
 pip install torch==1.3.0+cu100 torchvision==0.4.1+cu100 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
+To Train for CRAFT:
+```
+pip install torch==1.7.0+cu100 torchvision==0.8.1+cu100 -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+
 Note that this requires CUDA 10.0. If you need CUDA 9.2 then change `cu100` to `cu92`. Depending on your cuda version, you may want to install previous versions of PyTorch.  See [here](https://pytorch.org/get-started/previous-versions/).
 
 Other requirements are in `requirements.txt` and can be installed with
