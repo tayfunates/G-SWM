@@ -267,9 +267,9 @@ class IntuitivePhysicsDataset(data.Dataset):
         #GSWM only - no text use
         ret = item_dict['simulation'][0].squeeze()
         shape = ret.shape
-        ret = ret.reshape(shape[1], shape[2], shape[3], shape[0])[:self.first_frames, :, :, :]
+        ret = ret.reshape(shape[1], shape[0], shape[2], shape[3])[:self.first_frames, :, :, :]
 
-        return ret
+        return ret, torch.zeros(0)
 
 
 def base_collate_fn(batch):
